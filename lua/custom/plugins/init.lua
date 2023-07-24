@@ -2,4 +2,17 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+	{
+		'windwp/nvim-autopairs',
+		config = function()
+			require('nvim-autopairs').setup({})
+		end
+	},
+	{
+		'nvim-telescope/telescope-project.nvim',
+		config = function()
+			require('telescope').load_extension('project')
+		end
+	},
+}

@@ -91,6 +91,8 @@ require('lazy').setup({
     },
   },
 
+  'mfussenegger/nvim-jdtls',
+
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -271,6 +273,14 @@ require('telescope').setup {
       },
     },
   },
+  pickers = {
+    find_files = {
+      follow = true,
+    },
+    live_grep = {
+      follow = true,
+    }
+  }
 }
 
 -- Enable telescope fzf native, if installed
